@@ -1,0 +1,21 @@
+topic: ~pepperChat()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+
+u:(what is your name) my name is pepper
+u:([“i like it” “i really love it”]) i like it too
+u:(my name is david) i store your name $name=david
+u:(what is my name) your name is $name
+u:(is my name david) [“$name==david yes” “no it is $name”]
+u:(my name is _[david robert]) your name is $1
+
+ 
